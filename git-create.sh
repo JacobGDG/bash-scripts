@@ -12,5 +12,7 @@ fi
 
 curl -H "Authorization: token $GIT_TOKEN" https://api.github.com/user/repos -d "{\"name\":\"$repo_name\"}"
 
+echo "Create a new repo at https://github.com/JacobGDG/$repo_name"
+
 git init
 git remote add origin "https://github.com/JacobGDG/$repo_name.git"
